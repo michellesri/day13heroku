@@ -1,0 +1,13 @@
+
+.hidden{
+  display: none;
+}
+
+.unhidden {
+  display: block;
+}
+
+#filters {
+  display: flex;
+  flex-direction: row;
+}

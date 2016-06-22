@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="stylesheet.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="smaccs1.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="smaccs2.css" media="screen" title="no title" charset="utf-8">
+
+    <title>Michelle Sri</title>
+  </head>
+  <body>
+    <script id="project-template" type="text/template">
+      <h3>{{name}}</h3>
+      <ul>
+        <li>{{location}}</li>
+        <li>{{experience}}</li>
+        <li>{{gear}}</li>
+      </ul>
+    </script>
+
+    <!-- this is the template for the repository -->
+
+    <script id="repo-template" type="text/x-handlebars-template">
+      <li>
+        <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+        <p>Description: {{description}}</p>
+        <p>Language {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Laster updated: {{updated_at}}</p>
+        {{#if watchers_count}}
+        <p>{{watchers_count}} watching this repo</p>
+        {{/if}}
+      </li>
+    </script>
+
+    <section class="BioContainer">
+        <div id="bioPicCont" class="picture">
+          <!-- the modal is not working. it is not sizing correctly when it opens -->
+          <div class='modalDiv'>
+            <a id='modalBtnDiv' href="#openModal"><img id="bioPic" src="images/76 copy.jpg"></a>
+            <div id="modalDialogCont">
+              <div id="openModal" class="modalDialog">
+              </div>
+              <div id='appendHere'>	dskjfldfjldkf<a href="#close" title="Close" class="close">X</a>
+            </div>
+        </div>
+      </div>
+        </div>
+        <div class="headerText">
+          <div class="nameCont">
+            <div id="bioName" class="name">Michelle Sri</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="navContainer">
+        <div class="listCont">
+            <nav class="main-nav">
+            <ul>
+              <li id='homeNav'><a href= '/home' class="tab" data-content="home">home list item</a></li>
+              <li id='aboutNav'><a href= '/about' class="tab" data-content="about">about list item</a></li>
+              <li id='projectNav'><a href= '/projects' class="tab" data-content="projectsHandle">project LI</a></li>
+              <li id='interestNav'><a href= '#' class="tab" data-content="interests">interests</a></li>
+
+              <li><a href="https://www.flickr.com/photos/michellesri">Flickr</a></li>
+              <li><a href="https://www.facebook.com/michelle.sri10">Facebook</a></li>
+              <li><a href="https://github.com/michellesri/">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/michellesri">LinkedIn</a></li>
+            </ul>
+          </nav>
+
+          <div class="listCont">
+            <ul id="filters">
+              <li>
+                <select id="filter1">
+                  <option value-"">-- Filter by Experience --</option>
+                </select>
+              </li>
+              <li>
+                <select id="filter2">
+                  <option value-"">-- Filter by Location --</option>
+                </select>
+              </li>
+            </ul>
+
+
+        </div>
+        <!-- commented out hamburger nav bar. not sure if required. -->
+        <!-- <div id="navCont">
+          <a href="#menu">
+            <img id="navPic" src="images/hamburgerMenu.png" alt="icon">Menu</a>
+          </div> -->
+      </section>
+      <p id='interests' class='tab-content'>woohooo p tag</p>
+
+      <section class="container">
+        <div id='home'class="homeCont tab-content">
+          <h3>Home</h3>
+          <p>welcome to my home page!</p>
+        </div>
+      </section>
+
+      <section class="container">
+        <div id='about' class="aboutCont tab-content">
+          <h3>About</h3>
+          <p>Hi, my name is Michelle. I'm a recent PNW transplant originally from California.</p>
+        </div>
+      </section>
+      <section id="projectsHandle" class="tab-content">
+
+      </section>
+      <section id="gitAbout" class="tab-content">
+        <header>
+          welcome to my blog!
+        </header>
+        <section>
+          <h1>check out my projects on github:</h1>
+          <ul>
+            <li>coding</li>
+          </ul>
+        </section>
+      </section>
+
+      <script src="/vendor/scripts/jquery-2.1.4.js"></script>
+      <script src="/vendor/scripts/page.js"></script>
+      <script src="/vendor/scripts/handlebars.js"></script>
+      <script src="/vendor/scripts/marked.js"></script>
+      <script src="/vendor/scripts/html5sql.js"></script>
+
+    <!-- <script src='data.js'></script> -->
+
+
+    <script src='data.json'></script>
+    <!-- <script type="text/javascript" src="githubToken.js"></script> -->
+    <script type="text/javascript" src='app.js'></script>
+    <script type="text/javascript" src="repoView.js"></script>
+    <script type="text/javascript" src="repo.js"></script>
+    <script type="text/javascript" src='homeController.js'></script>
+    <script type="text/javascript" src='aboutController.js'></script>
+
+    <script src='projectController.js'></script>
+    <script src='routes.js'></script>
+  </body>
+</html>
+
+<!-- commented out interact.js because we are using controller instead -->
+<!-- <script src='interact.js'></script> -->

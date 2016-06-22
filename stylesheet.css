@@ -1,0 +1,54 @@
+/*the bio pic goes here*/
+
+#bioName {
+
+}
+
+#bioPic { /*the pic is 100% of the container. the container is 30% of the page*/
+  width: 100%;
+}
+
+#bioPicCont {
+  width: 30%;
+}
+
+/*the background color is set here*/
+
+body {
+  background-color: grey;
+}
+
+.listCont {
+  display: flex;
+}
+
+nav {
+  width: 30%;
+}
+
+nav ul {
+  padding: 0;
+  margin: left;
+  width: 30%;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  background-color: #f1f1f1;
+  font-size: 1vw;
+}
+
+li a {
+  display: block;
+  color: #000;
+  /*padding: 10%;*/
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
