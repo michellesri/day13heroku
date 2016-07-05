@@ -2,7 +2,7 @@
   Project.all = [];
 
   var articleView = {};
-// use OOP
+
   function Project(object) {
     this.name = object.name;
     this.location = object.location;
@@ -13,13 +13,6 @@
   Project.prototype.toHtml = function(){
     var template = Handlebars.compile($('#project-template').text());
     return template(this);
-  // var $newProject = $('.projects').clone();
-  // $newProject.removeClass('projects');
-  // $newProject.find('h2').text(this.name);
-  // $newProject.find('#one').text(this.location);
-  // $newProject.find('#two').text(this.experience);
-  // $newProject.find('#three').text(this.gear);
-  // return $newProject;
 
   };
 
@@ -55,18 +48,6 @@
     });
   };
 
-  articleView.handleAuthorFilter = function() {
-    $('#filter1').on('change', function() {
-      if ($(this).val()) {
-        $('article').hide();
-        $('article[data-author="' + $(this).val() + '"]').fadeIn();
-      } else {
-        $('article').fadeIn();
-        $('article.template').hide();
-      }
-      $('#category-filter').val('');
-    });
-  };
   module.Project = Project;
   module.articleView = articleView;
   var arr = [1,2,3];
@@ -75,17 +56,3 @@
   });
   console.log(x);
 })(window);
-
-// i am going to wrap everything into an IFFE in order to expose the module to the window object.
-// remove these comments later
-//
-// function handleMainNav() {
-//   $('.main-nav').on('click', '.tab', function(e){
-//     $('.tab-content').hide();
-//     $('#' + $(this).data('content')).fadeIn();
-//   });
-//   $('.main-nav .tab:first').click();
-//
-// }
-//
-// handleMainNav();
