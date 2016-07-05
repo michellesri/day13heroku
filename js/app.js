@@ -2,7 +2,7 @@
   Project.all = [];
 
   var articleView = {};
-
+// use OOP
   function Project(object) {
     this.name = object.name;
     this.location = object.location;
@@ -76,6 +76,8 @@
   console.log(x);
 })(window);
 
+// i am going to wrap everything into an IFFE in order to expose the module to the window object.
+// remove these comments later
 //
 // function handleMainNav() {
 //   $('.main-nav').on('click', '.tab', function(e){

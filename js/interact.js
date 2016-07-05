@@ -4,3 +4,5 @@
 //     $('#' + $(this).data('content')).fadeIn(700);
 //   });
 // });
+
+// get rid of this interact page
