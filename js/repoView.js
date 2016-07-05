@@ -1,6 +1,6 @@
 (function(module) {
   $('#repo-template').hide();
-  $('#gitAbout').hide();
+  $('#gitAbout').show();
 
   var repoView = {};
 

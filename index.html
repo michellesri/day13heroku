@@ -36,20 +36,21 @@
 
     <section class="BioContainer">
         <div id="bioPicCont" class="picture">
+          <!-- i am going to remove this modal because it does not work and serves no purpose -->
           <!-- the modal is not working. it is not sizing correctly when it opens -->
           <div class='modalDiv'>
             <a id='modalBtnDiv' href="#openModal"><img id="bioPic" src="images/76 copy.jpg"></a>
             <div id="modalDialogCont">
               <div id="openModal" class="modalDialog">
               </div>
-              <div id='appendHere'>	dskjfldfjldkf<a href="#close" title="Close" class="close">X</a>
+              <div id='appendHere'><a href="#close" title="Close" class="close">X</a>
             </div>
         </div>
       </div>
         </div>
         <div class="headerText">
           <div class="nameCont">
-            <div id="bioName" class="name">Michelle Sri</div>
+            <div id="bioName" class="name"><h1>Michelle Sri</h1></div>
           </div>
         </div>
       </section>
@@ -70,21 +71,6 @@
             </ul>
           </nav>
 
-          <div class="listCont">
-            <ul id="filters">
-              <li>
-                <select id="filter1">
-                  <option value-"">-- Filter by Experience --</option>
-                </select>
-              </li>
-              <li>
-                <select id="filter2">
-                  <option value-"">-- Filter by Location --</option>
-                </select>
-              </li>
-            </ul>
-
-
         </div>
         <!-- commented out hamburger nav bar. not sure if required. -->
         <!-- <div id="navCont">
@@ -92,7 +78,8 @@
             <img id="navPic" src="images/hamburgerMenu.png" alt="icon">Menu</a>
           </div> -->
       </section>
-      <p id='hofSentence' class='tab-content'>woohooo p tag</p>
+      <!-- remove this unnecessary text -->
+      <p id='hofSentence' class='tab-content'></p>
       <h3 id='hof2Sent'></h3>
       <h4 id='hof3Sent'></h4>
 
@@ -119,7 +106,7 @@
         <section>
           <h1>check out my projects on github:</h1>
           <ul>
-            <li>coding</li>
+            <li>this section under construction</li>
           </ul>
         </section>
       </section>
@@ -132,15 +119,21 @@
 
     <!-- <script src='data.js'></script> -->
 
-
-    <script src='data.json'></script>
-    <!-- <script type="text/javascript" src="githubToken.js"></script> -->
     <script type="text/javascript" src='js/app.js'></script>
+
+
+    <script src='data/data.json'></script>
+    <script src='data/package.json'></script>
+
+    <!-- <script type="text/javascript" src="githubToken.js"></script> -->
+    <script type="text/javascript" src='js/server.js'></script>
+
     <script type="text/javascript" src="js/repoView.js"></script>
     <script type="text/javascript" src="js/repo.js"></script>
     <script type="text/javascript" src='js/homeController.js'></script>
     <script type="text/javascript" src='js/aboutController.js'></script>
     <script type="text/javascript" src='js/hof.js'></script>
+
 
     <script src='js/projectController.js'></script>
     <script src='js/routes.js'></script>
